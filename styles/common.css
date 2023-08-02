@@ -1,0 +1,44 @@
+header {
+    width:calc(100% - 60px);
+    margin:0 auto;
+    background-color: aqua;
+    height: 100px;
+    display:flex;
+    flex-flow:row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+header h1 {width: 213px;}
+header h1 a {}
+header h1 img {width: 100%;}
+header .right {
+    display: flex;
+    flex-flow:row nowrap;
+    align-items: center;
+}
+header .right a {}
+header .right >* {margin-left: 20px;}
+header .right .lang {margin-left:0;}
+header .right #searchFrm {
+}
+header .right #searchFrm fieldset {
+    background: #fff;
+    height: 35px;
+    width: 291px;
+    display: flex;
+    flex-flow:row nowrap;
+    justify-content: space-between;
+    border-radius: 5px;
+    border:2px solid #9B9B9B;
+    padding:0 10px;
+}
+header .right #searchFrm fieldset #searchTxt {color:#5a5a5a}
+header .right #searchFrm fieldset #searchTxt::placeholder {color:#9B9B9B}
+header .right #searchFrm fieldset #searchBtn {width: 24px; background: none;}
+header .right #searchFrm fieldset #searchBtn img {width: 100%;}
+header .right .login {}
+header .right .login img {}
+header .right .cart {}
+header .right .cart img {}
+header .right .nav {}
+header .right .nav img {}
