@@ -1,0 +1,184 @@
+body {
+    background: #F1F1F1;
+}
+main {
+    padding: 130px 0;
+    background: #fff;
+    width: 750px; margin:50px auto;
+    text-align: center;
+}
+main h1 {
+    font-size: 2.369rem;
+    font-weight: 700;
+    margin-bottom: 70px;
+}
+main .tab {
+    display: flex;
+    justify-content: center;
+}
+main .tab h2 {}
+main .tab h2 a {
+    font-weight: 700;
+    font-size: 1.333rem;
+    padding-bottom: 30px;
+    color: #aaa;
+    width: 325px; 
+    border-bottom: 3px solid #aaa;
+    display: inline-block;
+}
+main .tab a.active {
+    color:#000;
+    border-bottom: 3px solid #000;
+}
+main .tab1 {}
+main .tab1 form {}
+main .tab1 form fieldset {
+    width: 500px;
+    display: flex;
+    flex-flow:column nowrap;
+    margin:0 auto;
+    margin-top: 70px;
+}
+main .tab1 form fieldset #id::placeholder, main .tab1 form fieldset #pw::placeholder {font-size: 1.333rem;}
+main .tab1 form fieldset #id {
+    height: 60px;
+    border-radius: 10px;
+    border:2px solid #aaa;
+    padding:0  30px;
+    margin-bottom: 20px;
+}
+main .tab1 form fieldset .pwbox {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content:space-between;
+    align-content: center;
+    height: 60px;
+    border-radius: 10px;
+    border:2px solid #aaa;
+    padding:15px 30px;
+}
+main .tab1 form fieldset .pwbox #pw {width: 90%;}
+main .tab1 form fieldset .pwbox img {width: 100%;}
+main .tab1 form fieldset #login {
+    height: 60px;
+    border-radius: 10px;
+    color:#fff;
+    background: #000;
+    margin-top: 40px;
+    font-size: 1.333rem;
+}
+main .tab1 form fieldset .login_btm {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+main .tab1 form fieldset .login_btm .login_btm_l {}
+main .tab1 form fieldset .login_btm label input {
+    /* margin-right: 10px; */
+    appearance:none;
+}
+main .tab1 form fieldset .login_btm label span {
+    background:url(../images/check_box_no.png)no-repeat 0 2px;
+    padding-left: 30px;
+    font-size: 1.333rem;
+    cursor: pointer;
+}
+main .tab1 form fieldset .login_btm label input:checked+span{
+    background: url(../images/check_box.png)no-repeat 0 2px;
+}
+main .tab1 form fieldset .login_btm .login_btm_r {}
+main .tab1 form fieldset .login_btm .login_btm_r a {
+    font-size: 1.333rem;
+    color:#aaa;
+}
+main .tab1 form fieldset .login_btm .login_btm_r a:first-child::after{
+    content:'';
+    display: inline-block;
+    width: 2px; height: 20px;
+    background: #aaa;
+    position: relative; top:2px;
+    margin:0 10px;
+}
+main .tab1 form fieldset .sns_login {margin-top: 40px;}
+main .tab1 form fieldset .sns_login a {
+    display: block;
+    height: 60px;
+    border-radius: 10px;
+    display: flex; flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+main .tab1 form fieldset .sns_login a img {width: 30px; margin-right: 20px;}
+main .tab1 form fieldset .sns_login .kakao {
+    background: #FEE500;
+    margin-bottom: 20px;
+}
+main .tab1 form fieldset .sns_login .apple {
+    background: #fff;
+    border:2px solid #aaa;
+}
+main .tab1 form fieldset .sns_login .kakao:hover, main .tab1 form fieldset .sns_login .apple:hover {
+    box-shadow: 0 0 5px rgba(0,0,0,0.2);
+}
+main .tab1 form fieldset .sns_login .apple {}
+main div > p {
+    margin-top:70px;
+    color:#0078FF;
+    font-size: 1.333rem;
+    font-weight: 700;
+}
+main div > p a {
+    color:#0078FF;
+    font-size: 1.333rem;
+    font-weight: 700;
+    border: 2px solid #0078FF;
+    padding: 5px 15px;
+    border-radius: 5px;
+    margin-left: 20px;
+}
+main div > p a:hover {
+    background: #0078FF;
+    color:#fff;
+}
+main .tab2 {}
+main .tab2 form {}
+main .tab2 form fieldset {
+    width: 500px;
+    display: flex;
+    flex-flow:column nowrap;
+    margin:0 auto;
+    margin-top: 70px;
+}
+main .tab2 form fieldset ul {}
+main .tab2 form fieldset ul li {
+    margin-bottom: 30px;
+}
+main .tab2 form fieldset ul li:last-child {margin-bottom: 0;}
+main .tab2 form fieldset ul li p {
+    font-size: 1.333rem;
+    margin-bottom: 30px;
+    text-align: left;
+}
+main .tab2 form fieldset ul li input {
+    width: 500px;
+    height: 60px;
+    border-radius: 10px;
+    border:2px solid #aaa;
+    padding:0 30px;
+/*     ;
+    margin-bottom: 20px; */
+}
+main .tab2 form fieldset ul li button {
+    width: 500px;
+    height: 60px;
+    border-radius: 10px;
+    border:2px solid #eee;
+    font-size: 1.333rem;
+    font-weight: 700;
+    color:#aaa;
+}
+main .tab2 form fieldset ul li button:hover {
+    background: #bebebe;
+    color:#fff;
+}

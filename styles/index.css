@@ -43,6 +43,7 @@ main .visual .text .link a {
 }
 main .visual .text .link a:hover {
     background: #ff83bd;
+    opacity: 90%;
     color: #fff;
 }
 main .visual .text .link a:first-child {margin-right: 10px;}
