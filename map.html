@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>매장보기 | 젠틀몬스터</title>
+    <!-- swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/common.css">
+    <link rel="stylesheet" href="./styles/map.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <!-- php local확인불가, FTP업로드 후 web확인가능 -->
+    <!-- header -->
+    <?php include("./header.php") ?>
+    <main>
+        <div class="location">
+            <h1 class="shop">매장보기</h1>
+            <h2 class="shop_adr">젠틀몬스터 홍대 플래그십스토어</h2>
+            <div id="map"><!-- 지도삽입위치 --></div>
+            <p class="address"><i class="fa-solid fa-location-dot"></i>서울특별시 마포구 독막로7길 54 젠틀몬스터 홍대 플래그십스토어</p>
+            <p class="number"><i class="fa-solid fa-phone"></i>02-3144-0864</p>
+        </div>
+    </main>
+    <!-- footer -->
+    <?php include("./footer.php") ?>
+    <script src="./script/common.js"></script>
+    <!-- 카카오 지도를 사용하기 위한 js 앱키 준비 -->
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=d892061c97b33004cd758ddf658d5a1b"></script>
+    <script>
+        var markerPosition  = new kakao.maps.LatLng(37.5500531,126.9200835);
+        const container = document.getElementById('map'); //지도를 담을 영역의 DOM 레퍼런스
+        let options = { //지도를 생성할 때 필요한 기본 옵션
+	    center: new kakao.maps.LatLng(37.5500531,126.9200835), //지도의 중심좌표.
+	    level: 3 //지도의 레벨(확대, 축소 정도)
+        };
+        let map = new kakao.maps.Map(container, options); //지도 생성 및 객체 리턴
+        var marker = new kakao.maps.Marker({
+	        position: markerPosition
+        });
+        marker.setMap(map);
+    </script>
+</body>
+</html>
