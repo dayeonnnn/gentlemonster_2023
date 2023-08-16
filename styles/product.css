@@ -55,7 +55,6 @@ main #category,main #product_list {
     margin: 0 auto;
 }
 main #category {
-    background-color: aqua;
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
